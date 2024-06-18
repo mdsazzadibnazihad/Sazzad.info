@@ -1,12 +1,11 @@
-// Author: Shayer Mahmud Sowmik [ Ign0r3dH4x0r ]
-// Removing credit won't make you a cool programmer xD
+// Author: Md Sazzad Ibna Zihad [ mdsazzadibnazihad ]
+// Removing credit won't make you a cool programmer Sazzad
 
 $(document).ready(() => {
 
     $(document).on('click', '#send', function (e) {
         e.preventDefault();
         $('#logs').addClass('visually-hidden');
-        var amount = $("#amount").val();
         var mobile = $("#mobile").val().replace(/^0/, "");
         if (amount > 0 && mobile.length == 10) {
             var c = 0;
